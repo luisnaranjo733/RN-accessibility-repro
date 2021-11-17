@@ -16,9 +16,20 @@ const App = () => {
           flex: 1,
           justifyContent: 'center',
           alignItems: 'center',
+          backgroundColor: 'green',
+        }}
+        importantForAccessibility="no-hide-descendants">
+        <Text>{'Green text'}</Text>
+        <Button title="Green button" onPress={() => {}} />
+      </View>
+      <View
+        style={{
+          flex: 1,
+          justifyContent: 'center',
+          alignItems: 'center',
           backgroundColor: 'blue',
         }}
-        accessible={false}>
+        accessible={true}>
         <Text>{'Blue text'}</Text>
         <Button title="Blue button" onPress={() => {}} />
       </View>
@@ -29,7 +40,7 @@ const App = () => {
           alignItems: 'center',
           backgroundColor: 'red',
         }}
-        accessible={true}>
+        accessible={false}>
         <Text>{'Red text'}</Text>
         <Button title="Red button" onPress={() => {}} />
       </View>
